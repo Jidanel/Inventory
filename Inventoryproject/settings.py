@@ -56,7 +56,7 @@ ROOT_URLCONF = 'Inventoryproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],       #Pour dire à django que le dossier templates a été crée et se trouve dnas le dossier mere du projet
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
